@@ -1,0 +1,15 @@
+{% extends 'layout.html' %} {% block body %} 
+{% if title %}
+<title>Flask-Blog - {{ title }}</title> 
+{% else %} 
+<title>MyFlaskApp</title> 
+{% endif %}
+
+<body>
+  <h1>Home</h1>
+  {% for post in posts%}
+  <h1>{{ posts.title }}</h1>
+  <p>By {{ post.author }} on {{ post.date_posted }}</p>
+  <p>{{ post.content }}</p>
+  {% endfor %} {% endblock %}
+</body>
