@@ -1,9 +1,9 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 #
 app = Flask(__name__)
 
-# dummy post
+# dummy post !list of dictonaries
 posts = [
     {
         'author': "Matterholt",
@@ -25,13 +25,13 @@ posts = [
 
 @app.route('/')  # root folder
 @app.route('/home')
-def index():
+def home():
     return render_template('home.html', posts=posts)
 
 
 @app.route("/about")
 def about():
-    return render_template("about.html", title="About")
+    return render_template("about.html", title = 'aboutThis')
 
 
 if __name__ == "__main__":
