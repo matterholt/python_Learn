@@ -1,0 +1,8 @@
+label,task,start,numDay
+plan, workshop layout, 2019-01-08, 2
+plan, tool layout, 2019-01-09,1
+clean, remove feed ally, 2019-01-08,4
+build, tool rack, 2019-01-10, 4
+build, electric, 2019-01-11,2
+build, scrap wood rack, 2019-01-15, 6
+

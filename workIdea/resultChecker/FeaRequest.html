@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font: 1rem 'Fira Sans', sans-serif;
+        }
+        input,
+        label {
+            margin: .4rem 0;
+            font-size: 1rem;
+            }
+        .mainForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border: 2px solid black;
+            width: 50em;
+            padding: 1em;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="mainForm">
+        <h2>FEA Request</h2>
+        <form action="">
+            <label for="modelName">Version Name: </label>
+            <input type="text" id="modelName" name="modelName"> <br>
+            <label for = "date">Date: </label>
+            <input type="text" id="date" name="date"> <br>
+            <label for= "baseModel">Base Model: </label>
+            <input type="text" id="baseModel" name="baseModel"> <br>
+            <label>Part Change: </label>
+            <input type="text" id= "partChange" name="partChange"> <br>
+            <label>Analysis: </label>
+            <input type="text" id= "analysisPer" name="analysis"> <br>
+            <label>Catia File: </label>
+            <input type="text" id= "fileLoc" name="fileLoc"> <br>
+        </form>
+    </div>
+    
+</body>
+</html>

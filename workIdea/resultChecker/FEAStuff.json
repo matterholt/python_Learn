@@ -1,0 +1,42 @@
+{
+    "model" : "V10R30",
+    "FEARequest" : {
+        "date" : "12-14-19",
+        "BaseModel": "V10R00" ,
+        "mass" : "20kg",
+        "PIC" : "Designer",
+        "catiaFile" : "f:/geom/cae/v10r30",
+        "analysis" : {
+            "dura": ["mbpos","mtneg"],
+            "static" : ["ftpos","ftneg"]
+        },
+        "partChange": ["Rear Beam Lwr", "Side Mbr", "Side Mbr Upr", "Trans mount" ]
+    },
+    "results" : {
+        "dura": {
+            "mbpos" : {
+                "value" : ".10",
+                "percent" : "100",
+                "judgement" : "Pass"
+            },
+            "mtneg" : {
+                "value" : ".01",
+                "percent" : "10%",
+                "judgement" : "Fail"
+            }
+        },
+        "static" : {
+            "ftpos" : {
+                "value" : "80",
+                "percent" : "80%",
+                "judgement" : "Fail"
+            },
+            "ftneg" : {
+                "value" : "120N",
+                "percent" : "120%",
+                "judgement" : "Pass"
+            }
+        }
+    }
+}
+
