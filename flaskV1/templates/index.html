@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="cmRequest">
+        <div class="head">
+            <h1>FEA Model Tracker</h1>
+        </div>
+        <div class="cmData">
+
+            <label for="dateSub"> Date sent:  </label>
+            <input id= "dateSub"type="text">
+    
+            <label for="cmName"> CM model Name: </label>
+            <input id= "cmName"type="text">
+    
+            <label for="baseName"> Base model Name: </label>
+            <input id= "baseName"type="text">
+    
+            <label for="partChange"> Part update:  </label>
+            <input id= "partChange"type="text">
+    
+            <label for="analysisPer"> Anlysis Perform:  </label>
+            <input id= "analysisPer"type="text">
+    
+            <label for="modelDescp"> Why model need change:  </label>
+            <input id= "modelDescp"type="text">
+        </div>
+
+    </div>
+{% endblock %}

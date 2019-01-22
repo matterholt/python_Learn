@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ftech Stuff</title>
+    <style>
+        body,
+        nav{
+            margin: 0 auto;
+            padding: 0;
+            height: 100%;
+            font-size: 20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        label,
+        input{
+            margin: .3em .5em;
+            padding: .2em .5em;
+            font-size: 20px;
+            border-radius: .2em;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        nav,
+        a{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: rgb(207, 234, 246);
+            padding: .2em;
+            margin: auto;
+        }
+        .cmRequest{
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            color: rgb(255, 255, 255);
+        }
+        .cmData{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(0, 65, 150);
+            border-radius: 2em;
+            padding:1em 2em;
+            width: 19em;
+            margin: auto;
+        }
+        .head{
+            color: #000;
+            text-align: center;
+        }
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">FEA Request</a>
+        <a href="/modelResults">Analysis Results</a>
+
+    </nav>
+    {% block content %}
+    
+    {% endblock %}
+</body>
+</html>
