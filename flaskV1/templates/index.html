@@ -1,11 +1,18 @@
 {% extends "layout.html" %}
 
 {% block content %}
+<header class="intro_head">
+    <h1 class="tile">
+        FEA Request Data
+    </h1>
+    <p class="title__decsription">
+        Add data for the countermeasure applied to model <br>
+
+    </p>
+</header>
 <div class="cmRequest">
-        <div class="head">
-            <h1>FEA Model Tracker</h1>
-        </div>
-        <div class="cmData">
+    <div class="cmData">
+            <h3>CounterMeasure Info</h3>
 
             <label for="dateSub"> Date sent:  </label>
             <input id= "dateSub"type="text">
@@ -24,6 +31,10 @@
     
             <label for="modelDescp"> Why model need change:  </label>
             <input id= "modelDescp"type="text">
+            <div class= "interaction">
+                <button class = "button-submit" id= "save">Save</button>
+                <button class = "button-clear" id= "clear">Clear</button>
+            </div>
         </div>
 
     </div>

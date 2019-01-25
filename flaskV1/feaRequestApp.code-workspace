@@ -4,5 +4,7 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"python.pythonPath": "/Users/matterholt/anaconda3/envs/flask_test/bin/python"
+	}
 }
